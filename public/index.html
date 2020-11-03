@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="%PUBLIC_URL%/images/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <link href="%PUBLIC_URL%/css/styles.css" rel="stylesheet">
+  <link href="%PUBLIC_URL%/css/Rajdhani.css" rel="stylesheet">
+  <link rel="stylesheet" href="%PUBLIC_URL%/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700&amp;subset=devanagari,latin-ext">
+
+  <title></title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div class="preloader" id="div-preloader">
+    <img src="/images/abclearn_preloader.gif" class="preloader-img" />
+  </div>
+  <link href="https://cdn.syncfusion.com/ej2/material.css" rel="stylesheet">
+  <div id="root"></div>
+
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <script type="text/javascript"> //<![CDATA[ 
+    var tlJsHost = ((window.location.protocol == "https:") ? "https://secure.trust-provider.com/" : "http://www.trustlogo.com/");
+    document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/trustlogo.js' type='text/javascript'%3E%3C/script%3E"));
+     //]]>
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+  <script src="%PUBLIC_URL%/js/base.js"></script>
+ <script>
+    if (document.addEventListener) {
+      document.addEventListener('contextmenu', function (e) {
+        alert("Right click is disabled"); //here you draw your own menu
+        e.preventDefault();
+      }, false);
+    } else {
+      document.attachEvent('oncontextmenu', function () {
+        alert("Right click is disabled");
+        window.event.returnValue = false;
+      });
+    }
+    $(document).keydown(function (event) {
+      if (event.keyCode == 123) {
+        return false;
+      }
+      else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+        return false;
+      }
+    });
+
+    $(document).on("contextmenu", function (e) {
+      e.preventDefault();
+    });
+  </script>
+  <script>
+    document.addEventListener("keydown", function (evt) {
+        console.log("keydown. You pressed the " + evt.keyCode + " key")
+    }, false);
+</script>
+</body>
+
+</html>

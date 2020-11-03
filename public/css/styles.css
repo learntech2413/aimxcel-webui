@@ -1,0 +1,56 @@
+.lessonmenu {
+  font-size: 1vw;
+  font-family: Rajdhani, sans-serif;
+  font-weight: 600;
+}
+
+.scrollable-menu {
+  height: auto;
+  max-height: 200px;
+  overflow-x: hidden;
+}
+.shape {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.top {
+  height: 0;
+  border-width: 0 0 100px 400px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.bottom {
+  height: 0px;
+}
+
+.topbar {
+  border: 0.1vw solid rgb(15,15,85);
+}
+
+.classct::hover {
+  transform: translate(100%,0%);
+}
+
+.classct {
+  transform: translate(-80%,0%);
+}
+
+classct:hover {
+  transform: translate(100%,0%);
+}
+
+.btnslider:hover {
+  transform: translate(80%,0%);
+}
+
+.preloader-img {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+margin:auto;
+width:20%;
+}
